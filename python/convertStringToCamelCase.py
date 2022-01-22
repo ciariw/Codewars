@@ -15,3 +15,4 @@ def to_camel_case(text):
         else:
             s+=i
     return s
+# Easy
