@@ -42,3 +42,4 @@ def valid_parentheses(string):
             c += i
         c = c.replace("()", "")
     return len(c) == 0
+# Things start to get difficult here. It took me about an hour to complete this but it helped me get better at looking for and utilizing built-in methods  
