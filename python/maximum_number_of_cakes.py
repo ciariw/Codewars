@@ -20,3 +20,4 @@ def cakes(recipe, available):
         x = available[i] // recipe[i]
         runningmax = min(x,runningmax)
     return runningmax
+# I enjoyed this one because it made me think out of the box to compesnate for what I dont know
