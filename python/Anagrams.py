@@ -26,3 +26,5 @@ def anagrams(word, words):
         if len(word) == len(i) and sorted(word) == sorted(i):
                 results.append(i)
     return results
+# I am getting tired of string manipulation and would like to get into more complicated problems
+# 5 Kyu
