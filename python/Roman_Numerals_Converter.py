@@ -60,3 +60,4 @@ class RomanNumerals:
             else:
                 val += RomanNumerals.symbols[i]
         return val
+    # I got to work with classes on this one
