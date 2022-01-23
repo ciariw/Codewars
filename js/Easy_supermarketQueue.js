@@ -22,8 +22,8 @@ function queueTime(customers, n) {
   let = queue = Array(n).fill(0);
   let customerID = 0;
   while (true){
-    for (let i = 0; i < cue.length;i++){
-      queue[cue.indexOf(Math.min(...queue))] += customers[customerID];
+    for (let i = 0; i < queue.length;i++){
+      queue[queue.indexOf(Math.min(...queue))] += customers[customerID];
       customerID +=1;
       if (customerID >= customers.length){
         return Math.max(..queue)
