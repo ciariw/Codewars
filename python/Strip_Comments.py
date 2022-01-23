@@ -42,3 +42,4 @@ def solution(string, markers):
             cutque.append(i)
 
     return ''.join(cutque)
+# doing slightly more complicated string manipulation.....
