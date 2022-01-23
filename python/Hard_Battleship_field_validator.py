@@ -86,5 +86,5 @@ def validate_battlefield(field):
             break
 
     return not isFalse and ace.count([1]) == 4 and ace.count([2]) == 3 and ace.count([3]) == 2 and ace.count([4]) == 1
-# This was the most exciting problem I have solved so far! 
+# This was the most exciting problem I have solved so far! It took me about 3 hours to complete
 # I initially wanted to create a separate ship object to do the comparison but after more planning and drawing I noticed that I did not have to
