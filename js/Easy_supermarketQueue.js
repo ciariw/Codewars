@@ -19,16 +19,14 @@ function queueTime(customers, n) {
     return customers.length > 0  ? Math.max(...customers):0;
   }
   
-  let cueCount = Math.ceil(customers.length/(n % customers.length));
-  let sub2 = 0;
-  let = cue = Array(n).fill(0);
+  let = queue = Array(n).fill(0);
   let customerID = 0;
   while (true){
     for (let i = 0; i < cue.length;i++){
-      cue[cue.indexOf(Math.min(...cue))] += customers[customerID];
+      queue[cue.indexOf(Math.min(...queue))] += customers[customerID];
       customerID +=1;
       if (customerID >= customers.length){
-        return Math.max(...cue)
+        return Math.max(..queue)
       }
     }
 
