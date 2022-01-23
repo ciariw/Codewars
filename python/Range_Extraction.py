@@ -11,22 +11,21 @@ Example:
 solution([-6, -3, -2, -1, 0, 1, 3, 4, 5, 7, 8, 9, 10, 11, 14, 15, 17, 18, 19, 20])
 # returns "-6,-3-1,3-5,7-11,14,15,17-20"
 '''
-# Second attempt
 def solution(args):
     finali = []
     if len(args) < 2:
         return args
-    jube = []
+    fun = []
     # Assembly
     for index,i in enumerate(args):
-        jube.append(i)
+        fun.append(i)
         if i + 1 != args[(index+1)%(len(args))]:
-            if len(jube) != 2:
-                finali.append(jube)
+            if len(fun) != 2:
+                finali.append(fun)
             else:
-                finali.append([jube[0]])
-                finali.append([jube[-1]])
-            jube = []
+                finali.append([fun[0]])
+                finali.append([fun[-1]])
+            fun = []
     # Post processing
     final = []
     for i in finali:
@@ -35,3 +34,4 @@ def solution(args):
         else:
             final.append(str(i[0]))
     return ",".join(final)
+# Pretty cool stuff here
